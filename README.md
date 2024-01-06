@@ -41,7 +41,7 @@ sudo chmod u+x ./setup.sh
 
 También puedes hacerlo manualmente desde mysql-cli o desde tu cliente de MySQL. MySQL Workbench recomendado.
 
->[!Info]
+>[!info]
 > Los nombres de los sql scripts tienen un prefijo numérico que indica el orden en que deben ser ejecutados
 
 ## Prevista
