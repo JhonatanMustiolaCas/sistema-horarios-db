@@ -16,9 +16,9 @@ Primero clona este repo
 
 ```bash
 # clona el repo
-git clone git@github.com/JhonatanMustiolaCas/sistema-horarios.git
+git clone git@github.com/JhonatanMustiolaCas/sistema-horarios-db.git
 # entra en el directorio src
-cd sistema-horarios/src/
+cd sistema-horarios-db/src/
 ```
 
 Luego configura tus datos de acceso a tu usario de mysql en el archivo `config.cnf`
