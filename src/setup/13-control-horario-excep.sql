@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `DB_SISTEMA_HORARIOS`.`ControlHorario_Excep` (
+    `CHE_Id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `CHE_EmpId` INT UNSIGNED NOT NULL,
+    `CHE_NovedId` SMALLINT(4) UNSIGNED NOT NULL,
+    `CHE_FechaDesde` DATE,
+    `CHE_FechaHasta` DATE,
+    `CHE_Horas` SMALLINT(5) UNSIGNED,
+    KEY `FK_CHE_Emp` (`CHE_EmpId`),
+    KEY `FK_CHE_Noved` (`CHE_NovedId`),
+    CONSTRAINT `FK_CHE_Emp` FOREIGN KEY (`CHE_EmpId`) REFERENCES `Empleados` (`Emp_Id`),
+    CONSTRAINT `FK_CHE_Noved` FOREIGN KEY (`CHE_NovedId`) REFERENCES `Novedades` (`Noved_Id`)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;

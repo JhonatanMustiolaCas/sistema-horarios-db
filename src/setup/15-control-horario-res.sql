@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `DB_SISTEMA_HORARIOS`.`ControlHorario_Res` (
+    `CHR_Id` BIGINT(12) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `CHR_EmpId` INT UNSIGNED NOT NULL,
+    `CHR_Fecha` DATE,
+    `CHR_Horas` TINYINT(2),
+    KEY `IDX_FK_CHR_Emp` (`CHR_EmpId`),
+    CONSTRAINT `FK_CHR_Emp` FOREIGN KEY (`CHR_EmpId`) REFERENCES `Empleados` (`Emp_Id`)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+USE `DB_SISTEMA_HORARIOS`;
+CREATE INDEX `IDX_Fecha` ON `ControlHorario_Res` (`CHR_Fecha`);
+CREATE INDEX `IDX_Fecha_Emp` ON `ControlHorario_Res` (`CHR_Fecha`, `CHR_EmpId`);
