@@ -46,7 +46,7 @@ También puedes hacerlo manualmente desde mysql-cli o desde tu cliente de MySQL.
 
 ## Prevista
 
-<img src="./assets/model-layers.svg" />
+<img src="./assets/model-layers.png" />
 
 Este es un panorama general del diseño de la base de datos. En la misma se pueden notar divisiones, las cuales se detallarán a después de esta sección.
 
@@ -74,8 +74,6 @@ Este es un panorama general del diseño de la base de datos. En la misma se pued
 Tabla *Empleados*
 
 <img src="./assets/empleados.png" />
-
-****
 
 ****
 
