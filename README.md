@@ -6,7 +6,7 @@ La base de datos comprende todos los elementos esenciales a tomar en cuenta en l
 
 ## Tecnologías utilizadas
 
-+ `mysql-community 0.0.35`
++ `mysql-community 8.0.35`
 + `fedora-workstation 38`
 + `bash 5.2.21`
 
