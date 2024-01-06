@@ -1,4 +1,4 @@
 [client]
 user="usuario"
-password="contraseña$"
+password="contraseña"
 host="servidor"
