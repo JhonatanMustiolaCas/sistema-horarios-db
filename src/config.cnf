@@ -1,4 +1,4 @@
 [client]
-user="root"
-password="123456789Root$"
-host="localhost"
+user="usuario"
+password="contraseña$"
+host="servidor"
